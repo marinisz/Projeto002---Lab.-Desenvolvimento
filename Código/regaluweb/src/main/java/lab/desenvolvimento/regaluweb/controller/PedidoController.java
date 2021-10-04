@@ -27,7 +27,7 @@ public class PedidoController {
     @Autowired
     private VeiculoRepository veiculoRepository;
 
-    @GetMapping("listar veiculo")
+    @GetMapping("listarVeiculo")
     public ModelAndView listVeiculos(){
         List<Veiculo> veiculos = this.veiculoRepository.findAll();
         System.out.println("procurando veiculos");
